@@ -28,7 +28,8 @@ Same as [create-react-app](https://facebook.github.io/create-react-app/docs/gett
   - [redux-saga](https://www.npmjs.com/package/redux-saga), uncomment code inside `utilities/connectedFactory` and `index.js`
 ## HOC
   - [hoist-non-react-statics](https://www.npmjs.com/package/hoist-non-react-statics), [sample](https://github.com/ReactTraining/react-router/blob/master/packages/react-router/modules/withRouter.js)
-  - Consider [renderProps](https://cdb.reacttraining.com/use-a-render-prop-50de598f11ce) (MyComponent() === \<MyComponent \/\>) and new [Hooks API](https://reactjs.org/docs/hooks-intro.html) [[1](https://medium.com/jexia/everything-about-react-hooks-fundamentals-best-practices-and-opinions-476d37074c27), [2](https://dev.to/oieduardorabelo/react-hooks-how-to-create-and-update-contextprovider-1f68), [3](https://www.hooks.guide/), [4](https://www.reddit.com/r/reactjs/comments/9tto1x/are_react_hooks_going_to_kill_redux/e8zn4s1/),]
+  - Consider [renderProps](https://cdb.reacttraining.com/use-a-render-prop-50de598f11ce) (MyComponent() === \<MyComponent \/\>)
+  - Consider new [Hooks API](https://reactjs.org/docs/hooks-intro.html) [[1](https://medium.com/jexia/everything-about-react-hooks-fundamentals-best-practices-and-opinions-476d37074c27), [2](https://dev.to/oieduardorabelo/react-hooks-how-to-create-and-update-contextprovider-1f68), [3](https://www.hooks.guide/), [4](https://www.reddit.com/r/reactjs/comments/9tto1x/are_react_hooks_going_to_kill_redux/e8zn4s1/),]
 ## Absolute Imports
 *and VS Code Intellisense*
   - babel-plugin-module-resolver

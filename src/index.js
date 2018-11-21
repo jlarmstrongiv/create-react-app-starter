@@ -1,0 +1,36 @@
+import React from 'react';
+import { render, hydrate, } from 'react-dom';
+import { Provider, } from 'react-redux';
+import { ConnectedRouter, } from 'connected-react-router';
+import HttpsRedirect from 'react-https-redirect';
+
+import * as serviceWorker from 'serviceWorker';
+import { connectedFactory, } from 'utilities';
+// import { watchSample, } from 'store/sagas';
+import App from 'App';
+
+const { store, history, /* sagaMiddleware */ } = connectedFactory();
+
+// sagaMiddleware.run(watchSample);
+
+export const root = (
+  <Provider store={store}>
+    <ConnectedRouter history={history}>
+      <HttpsRedirect>
+        <App />
+      </HttpsRedirect>
+    </ConnectedRouter>
+  </Provider>
+);
+
+const rootElement = document.getElementById('root');
+if (rootElement.hasChildNodes()) {
+  hydrate(root, rootElement);
+} else {
+  render(root, rootElement);
+}
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+serviceWorker.unregister();

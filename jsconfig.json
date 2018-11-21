@@ -1,0 +1,37 @@
+// baseUrl: "."
+// https://cuneyt.aliustaoglu.biz/en/absolute-imports-and-intellisense-with-create-react-app/
+// https://itnext.io/configure-absolute-paths-with-create-react-app-and-flow-e4b8922676a2
+// baseUrl: "./src"
+// https://medium.com/@fpastorelima/using-absolute-imports-with-vscode-and-create-react-app-dec6ba0da7ed
+// https://itnext.io/create-react-app-with-vs-code-1913321b48d
+
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2018",
+    "jsx": "preserve",
+    "checkJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
+    "paths": {
+      "*": [
+        "*"
+      ]
+    },
+    // "baseUrl": ".",
+    // "paths": {
+    //   "*": [
+    //     "src/*"
+    //   ]
+    // },
+  },
+  "typeAcquisition": {
+    "include": [
+      "jest"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*",
+  ]
+}
